@@ -557,7 +557,6 @@
 @media (width < 768px) {
   .footer__title {
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    /* padding-block-end: 116px; */
     padding-block-end: 6px;
   }
 }
