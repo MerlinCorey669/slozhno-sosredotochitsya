@@ -13,11 +13,11 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #FFC2E6;
+    --bg-color: #FFF1F7;
     --accent-color: #DB00FF;
     --title-color: #FFC2E6;
-    --text-color: #F1B2CE;
-    --second-text-color: #000028;
+    --text-color: #353430;
+    --second-text-color: #353430;
     --accent-color: #FF0070;
     --decor-color: #FF8DCB;
     --caption-color: #353430;
