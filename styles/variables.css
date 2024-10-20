@@ -1,4 +1,14 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --bg-color: #000028;
+  --accent-color: #DB00FF;
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --second-text-color: #000028;
+  --accent-color: #FF0070;
+  --decor-color: #FF0070;
+  --caption-color: #FF0070;
+  --decorated-color: #FF0070;
+  --font-size: 18px;
+  --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --main-font: 'IBM Plex mono', 'Oswald', 'Arial', sans-serif;;
+}
