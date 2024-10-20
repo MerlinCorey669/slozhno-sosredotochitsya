@@ -21,6 +21,10 @@ footer {
   background-color: var(--bg-color);
 }
 
+p {
+  font-size: var(--font-size);
+}
+
 @media (width < 768px) {
   main {
     padding-inline: 10px;

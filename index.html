@@ -14,7 +14,10 @@
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
-
+<!-- Алексей, спасибо большое за оперативный ответ(ревью) в столь позднее время!
+  Дедлайн горел, надеюсь работу засчитают сданной в срок!
+  Если бы не Вы, думаю точно улетел бы в некст когорту! Спасибо за годные правки!
+  Комментарий удалю позже, помню -->
     <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
@@ -46,9 +49,8 @@
         </ul>
       </nav>
 
-      <div class="decorated" aria-hidden="true">
-        <p>rec</p>
-        <span class="decorated_circle" aria-hidden="true"></span>
+      <div>
+        <span class="decorated" aria-hidden="true">rec</span>
       </div>
 
       <h1 class="header__title">no focus</h1>
@@ -61,49 +63,50 @@
     </header>
 
     <main class="main">
-      <section class="section-why">
-        <div class="section-why__title">
-          <h2>Почему сосредоточиться так сложно</h2>
-        </div>
-        <div class="section-why__container">
-          <p class="bold title-decor">Многозадачность</p>
-          <p class="main-text">
-            Особенно сложно сосредоточиться, когда задач много и все они —
-            важные. Где же легендарная многозадачность, когда она так нужна вам
-            (и всем нанимающим менеджерам этого мира)? А дело в том, что её
-            просто не существует. Исследователи
-            <a
-              class="link"
-              href="https://dana.org/article/multicosts-of-multitasking/"
-              >выяснили</a
-            >, что мозгу тяжело концентрироваться даже на двух делах
-            одновременно. А когда в поле внимания попадает несколько важных
-            задач, организм паникует и выделяет кортизол и адреналин — «гормоны
-            стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
-            устаём.
-          </p>
-          <p class="bold title-decor">Дофамин</p>
-          <p class="main-text">
-            С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
-            невозможности сосредоточиться замешана и полная противоположность
-            стрессу — дофамин. Это вещество участвует в системе вознаграждения
-            мозга. Причём тут он? Мы часто отвлекаемся от важной задачи на
-            что-то более «приятное» для мозгов. Например, смотрим лайки в
-            соцсетях. В это время и выделяется дофамин — и мы чувствуем
-            удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
-            тем больше удовольствия получаешь.
-          </p>
+      <section class="section why-section">
+        <h2 class="why-section__title">Почему сосредоточиться так сложно</h2>
+        <div class="why-section__container">
+          <article class="section__article">
+            <h3 class="bold title-decor">Многозадачность</h3>
+            <p class="main-text">
+              Особенно сложно сосредоточиться, когда задач много и все они —
+              важные. Где же легендарная многозадачность, когда она так нужна
+              вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
+              её просто не существует. Исследователи
+              <a
+                class="link"
+                href="https://dana.org/article/multicosts-of-multitasking/"
+                target="_blank"
+                >выяснили</a
+              >, что мозгу тяжело концентрироваться даже на двух делах
+              одновременно. А когда в поле внимания попадает несколько важных
+              задач, организм паникует и выделяет кортизол и адреналин —
+              «гормоны стресса». Из-за этого мы работаем невнимательно:
+              ошибаемся и быстро устаём.
+            </p>
+          </article>
+          <article class="section__article">
+            <h3 class="bold title-decor">Дофамин</h3>
+            <p class="main-text">
+              С гормонами стресса всё понятно, но дальше — ещё интереснее. В
+              нашей невозможности сосредоточиться замешана и полная
+              противоположность стрессу — дофамин. Это вещество участвует в
+              системе вознаграждения мозга. Причём тут он? Мы часто отвлекаемся
+              от важной задачи на что-то более «приятное» для мозгов. Например,
+              смотрим лайки в соцсетях. В это время и выделяется дофамин — и мы
+              чувствуем удовольствие. Получается замкнутый круг: чем больше
+              отвлекаешься, тем больше удовольствия получаешь.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section>
-        <div class="section-what__title">
-          <h2>Что снижает концентрацию внимания?</h2>
-        </div>
-        <ul class="section-what__list">
+      <section class="section what-section">
+          <h2 class="what-section__title">Что снижает концентрацию внимания?</h2>
+        <ul class="what-section__list">
           <li>
-            <article class="section-what__item">
-              <p class="bold title-decor">Многозадачность</p>
+            <article class="section__article">
+              <h3 class="bold title-decor">Многозадачность</h3>
               <p class="main-text">
                 Как концентрация может снижаться из-за… концентрации? Любая
                 стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -115,8 +118,8 @@
             </article>
           </li>
           <li>
-            <article>
-              <p class="bold title-decor">Еда</p>
+            <article class="section__article">
+              <h3 class="bold title-decor">Еда</h3>
               <p class="main-text">
                 «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
                 доставляют в мозг энергию и помогают ему лучше работать. Но
@@ -128,8 +131,8 @@
             </article>
           </li>
           <li>
-            <article>
-              <p class="bold title-decor">Гаджеты</p>
+            <article class="section__article">
+              <h3 class="bold title-decor">Гаджеты</h3>
               <p class="main-text">
                 Да-да, это та самая ситуация, когда на экране ноутбука — код, в
                 наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -145,20 +148,18 @@
         </ul>
       </section>
 
-      <section class="section-how">
-        <div>
+      <section class="section how-section">
           <h2>
             Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
             секунд)
           </h2>
-        </div>
-        <div class="section-how__container">
-          <p class="bold title-decor">
+        <article class="how-section__container">
+          <h3 class="bold title-decor">
             5 простых (на самом деле не очень) советов
-          </p>
-          <ul class="section-how__list">
-            <li>
-              <h3 class="normal title-decor">Представьте небо и облака</h3>
+          </h3>
+          <ul class="how-section__list">
+            <li class="how-section__list-item">
+              <h4 class="normal title-decor">Представьте небо и облака</h4>
               <p class="main-text">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая
                 помогает успокоиться. Ведь часто именно тревожные мысли о
@@ -170,8 +171,8 @@
                 не волноваться о потенциальных проблемах из будущего.
               </p>
             </li>
-            <li>
-              <h3 class="normal title-decor">Включите музыку</h3>
+            <li class="how-section__list-item">
+              <h4 class="normal title-decor">Включите музыку</h4>
               <p class="main-text">
                 Но не любую, и не любимую. Любимая может быть связана с сильными
                 положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -179,8 +180,8 @@
                 попробовать включить плейлист в «белым шумом» или нейромузыкой.
               </p>
             </li>
-            <li>
-              <h3 class="normal title-decor">Прогуляйтесь</h3>
+            <li class="how-section__list-item">
+              <h4 class="normal title-decor">Прогуляйтесь</h4>
               <p class="main-text">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                 показал, что созерцание природы повышает концентрацию, в то
@@ -191,8 +192,8 @@
                 отличный вариант.
               </p>
             </li>
-            <li>
-              <h3 class="normal title-decor">Хорошо ешьте</h3>
+            <li class="how-section__list-item">
+              <h4 class="normal title-decor">Хорошо ешьте</h4>
               <p class="main-text">
                 Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                 которые препятствуют резким скачкам сахара в крови. Например, с
@@ -201,8 +202,8 @@
                 пшеницы.
               </p>
             </li>
-            <li>
-              <h3 class="normal title-decor">Читайте</h3>
+            <li class="how-section__list-item">
+              <h4 class="normal title-decor">Читайте</h4>
               <p class="main-text">
                 Настоящие бумажные книги. Это правда помогает с концентрацией:
                 чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -211,14 +212,14 @@
               </p>
             </li>
           </ul>
-        </div>
+        </article>
       </section>
 
-      <section>
-        <div class="pictures_title"><p class="bold title-decor">А можно в картинках?</p></div>
+      <section class="section pictures-section">
+          <h3 class="bold title-decor pictures_title">А можно в картинках?</h3>
         <div class="pictures-container">
           <div class="sunset">
-            <img
+          <img
               class="sunset_img"
               src="./images/sunset.png"
               alt="Закат на фоне моря и гор"
@@ -231,36 +232,34 @@
               alt="мимимишное мороженое"
             />
           </div>
-          <div class="tape">
+            <div class="tape">
             <img
               class="tape_img"
               src="./images/tape.png"
               alt="Кассета для плеера"
             />
           </div>
-          <div class="books">
+            <div class="books">
             <img
               class="books_img"
               src="./images/books.png"
               alt="Книжка стопок с чашечкой кофе"
             />
           </div>
-
-          <div class="street">
+            <div class="street">
             <img
               class="street_img"
               src="./images/street.png"
               alt="Красивый вид на улице"
             />
           </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <h3 class="footer__title">focus</h3>
-      </div>
+    <footer class="footer decorated-zone">
+        <h5 class="footer__title">focus</h5>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
