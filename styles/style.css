@@ -145,7 +145,7 @@
 }
 
 .header__title {
-  color: var(--title-color, #db00ff);
+  color: var(--title-color);
   font-size: var(--title-font-size);
   font-family: var(--main-font);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -155,6 +155,7 @@
 @media (width < 1024px) {
   .header__title {
     padding-block-start: 78px;
+    opacity: 50%;
   }
 }
 
@@ -541,6 +542,7 @@
 @media (width < 1024px) {
   .footer__title {
     padding-block-start: 0;
+    opacity: 50%;
   }
 }
 
