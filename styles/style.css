@@ -412,7 +412,6 @@
     flex-direction: column;
     gap: 5.5px;
     padding-block-start: 10px;
-    padding-block-end: 0;
     padding-block-end: 40px;
   }
 }
