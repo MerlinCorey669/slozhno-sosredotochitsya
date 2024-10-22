@@ -14,7 +14,7 @@
   flex-direction: column;
   position: relative;
   height: 100dvh;
-  width: 100dvw;
+  width: 100%;
   min-height: 668px;
 }
 
@@ -63,6 +63,12 @@
   padding-block-start: 18px;
 }
 
+@media (width < 768px) {
+  .header__theme-menu {
+    padding-block-start: 20px;
+  }
+}
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
@@ -77,8 +83,8 @@
   .header__theme-menu-list {
     flex-direction: column;
     align-items: end;
-    padding-block-start: 170px;
-    gap: 5px;
+    padding-block-start: 173px;
+    gap: 10px;
     padding-inline-end: 20px;
   }
 }
@@ -93,8 +99,9 @@
 .header__theme-menu-button {
   text-transform: lowercase;
   background-color: transparent;
-  padding: 2px 13px 4px;
+  padding: 0px 12px 4px;
   border: 1px solid transparent;
+  line-height: 100%;
 }
 
 .header__theme-menu-button:hover {
@@ -128,7 +135,7 @@
 }
 
 .decorated::after {
-  content: '';
+  content: "";
   display: inline-block;
   filter: blur(2px);
   background-color: var(--decorated-color);
@@ -154,14 +161,14 @@
 
 @media (width < 1024px) {
   .header__title {
-    padding-block-start: 7px;
+    padding-block-start: 78px;
   }
 }
 
 @media (width < 768px) {
   .header__title {
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    padding-block-start: 64px;
+    padding-block-start: 66px;
     padding-inline-start: 10px;
     line-height: 0.83em;
   }
@@ -210,17 +217,27 @@
 
 .main {
   padding-block-start: 60px;
+  display: grid;
+  gap: 80px;
 }
 
 @media (width < 768px) {
   .main {
     padding-block-start: 40px;
+    gap: 49px;
   }
 }
 
 .why-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+}
+
+@media (width < 1024px) {
+  .why-section {
+    gap: 18px;
+  }
 }
 
 @media (width < 768px) {
@@ -229,14 +246,19 @@
   }
 }
 
+.section__title {
+  max-width: 305px;
+}
+
 @media (width < 1024px) {
-  .why-section__title {
+  .section__title {
     max-width: 230px;
+    width: 100%;
   }
 }
 
 @media (width < 768px) {
-  .why-section__title {
+  .section__title {
     max-width: 100%;
   }
 }
@@ -244,23 +266,7 @@
 .why-section__container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-inline-start: 7px;
-  padding-block-end: 79px;
-}
-
-@media (width < 1024px) {
-  .why-section__container {
-    padding-inline-start: 14px;
-  }
-}
-
-@media (width < 768px) {
-  .why-section__container {
-    padding-inline-start: 0;
-    padding-block-start: 20px;
-    padding-block-end: 46px;
-  }
+  gap: 19px;
 }
 
 .section__article {
@@ -285,29 +291,15 @@
   outline: 1px solid var(--text-color);
 }
 
-.what-section__title {
-  display: inline-block;
-  max-width: 315px;
-  width: 100%;
-}
-
-@media (width < 1024px) {
-  .what-section__title {
-    max-width: 230px;
-  }
-}
-
-@media (width < 768px) {
-  .what-section__title {
-    max-width: 100%;
-  }
+.what-section {
+  display: grid;
+  gap: 20px;
 }
 
 .what-section__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding-block-start: 19px;
 }
 
 @media (width < 1024px) {
@@ -318,17 +310,14 @@
 }
 
 .how-section {
-  padding-block-start: 80px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-block-end: 80px;
 }
 
 @media (width < 768px) {
   .how-section {
     grid-template-columns: 1fr;
-    padding-block-start: 49px;
-    padding-block-end: 47px;
+    gap: 18px;
   }
 }
 
@@ -347,7 +336,6 @@
 @media (width < 768px) {
   .how-section__container {
     padding-inline-start: 0;
-    padding-block-start: 20px;
   }
 }
 
@@ -365,8 +353,6 @@
   display: grid;
   gap: 20px;
 }
-
-
 
 @media (width < 768px) {
   .pictures-section {
@@ -397,7 +383,7 @@
   .pictures-container {
     display: flex;
     flex-direction: column;
-    gap: 5.5px;
+    gap: 5px;
     padding-block-start: 10px;
     padding-block-end: 40px;
   }
@@ -459,27 +445,25 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__title {
   color: var(--title-color, #db00ff);
   font-size: var(--title-font-size);
   font-family: var(--main-font);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--decor-color);
   padding-block-start: 10px;
 }
 
 @media (width < 1024px) {
   .footer__title {
     padding-block-start: 0;
-    opacity: 50%;
   }
 }
 
 @media (width < 768px) {
   .footer__title {
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    padding-block-end: 6px;
   }
 }
